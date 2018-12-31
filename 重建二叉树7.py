@@ -11,7 +11,7 @@ class TreeNode:
         self.left = None
         self.right = None
 
-class Solution:
+class Traverse(object):
     # 根据前序遍历与中序遍历返回二叉树
     def reConstructBinaryTree1(self, pre, tin):
         if not pre and not tin:

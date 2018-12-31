@@ -1,4 +1,4 @@
-from 重建二叉树 import *
+from 重建二叉树7 import *
 
 
 class Solution(Traverse):
