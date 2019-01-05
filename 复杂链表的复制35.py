@@ -43,7 +43,7 @@ class Solution:
         pNode = pHead
         pClonedHead = None
         pClonedNode = None
-        if pNode:
+        if pNode:#初始化clonedhead
             pClonedHead = pClonedNode = pNode.next
             pNode.next = pClonedNode.next
             pNode = pNode.next
@@ -93,10 +93,18 @@ class Solution:
 
 if __name__ == '__main__':
     sol=Solution()
-    link = sol.construct_nodes([1, 2, 3, 4, 5,6,9])
+    link = sol.construct_nodes([1, 2, 3, 4, 5])
+    sol.print_nodes(link)
+
+    sol.cloneNode(link)
+    '''
+    [[1, 2], [2, 3], [3], [4, 5], [5, 4]]
+[[1, 2], [1], [2, 3], [2], [3], [3], [4, 5], [4], [5, 4], [5]]
+copy是会直接发生在link身上的
+    '''
     sol.print_nodes(link)
     test = sol.Clone(link)  # 复制
-    #sol.print_nodes(test)
+    sol.print_nodes(test)
 
 
 
