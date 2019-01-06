@@ -10,7 +10,7 @@ class Solution:
         tmp = pHead
         while tmp:
             cur = tmp.next
-            # tmp指向前一个
+            # tmp指向前一个。链表：只需要知道下一个就行
             tmp.next = pre
             pre = tmp
             tmp = cur
