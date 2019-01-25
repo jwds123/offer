@@ -48,8 +48,8 @@ class Solution:
         for i in range(len(dir)):
             x_dir=x+dir[i][0]
             y_dir=y+dir[i][1]
-            #print(x_dir)
 
+            # 判断是否越界，是否已经访问过该点，当前得到的字符串s的长度是否小于path数组的长度，只有全部满足才往下进行
             if x_dir>=0 and y_dir>=0 and x_dir<rows and y_dir<cols and len(s)<len(path) and visited[x_dir][y_dir]==0:
                 #判断path中的下一个元素是否在li[][]中
                 print(path[len(s)])
